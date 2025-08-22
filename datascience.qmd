@@ -1,0 +1,47 @@
+---
+title: "Data Science"
+format: html
+editor: visual
+---
+
+Powell Braddock
+
+August 27, 2025
+
+ST 558 - Homework 1
+
+# Let's dive into what being a data scientist is all about: an interview with Powell
+
+-   **Q: What do you think being a data scientist is about?**
+
+-   A: Being a data scientist is about solving business problems using large amounts of data to create models that communicate major indicators as solutions.
+
+-   **Q: What differences/similarities do you see between data scientists and statisticians?**
+
+-   A: While statisticians infer significance in mainly batch or historical data, data scientists expand to real-time data. Data scientists also use more unstructured and unlabeled data, compared to statisticians.
+
+-   **Q: How do you view yourself in relation to these two areas?**
+
+-   A: I view myself as more of a data scientist than a statistician. Specifically, I see myself most interested in the role of data engineer, where I have an average amount of business/domain knowledge and engineering skills. While I have very developed statistical skills, I don't feel as strongly about utilizing them on a day-to-day basis as I do my engineering skills. In my current job, I'm working on optimizing ETLs, which is challenging and exciting.
+
+# We can begin doing some R code
+
+Our first chunk of code helps us determine the object y's class, type, and structure.
+
+```{r}
+y <- density(iris$Petal.Width)
+
+class(y)
+typeof(y)
+str(y)
+```
+
+Our second chunk of code uses the plot() function on the object y that was defined in the chunk prior. It has density on the y axis and the petal width on the x axis, with a specified value for both N and Bandwidth.
+
+In order to ensure the code for this chunk does not print, we can specify echo as false.
+
+```{r}
+#| echo: false
+plot(y)
+
+```
